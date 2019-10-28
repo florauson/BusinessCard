@@ -1,0 +1,104 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    /* height: 120vh; */
+    width: 90vw;
+    background-image: url("img/b3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    margin:auto auto;
+}
+
+nav 
+{
+    display: flex;
+    /* border: 2px solid red; */
+    width:90vw ;
+    justify-content: flex-end;
+    background-color: rgba(2, 167, 84, 0.9) ;
+    color:white;
+    padding-right: 40px;
+    box-sizing: border-box;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+
+nav a
+{
+margin: 10px;
+font-size: 1.5rem;
+color:white;
+}
+nav a:link {
+    text-decoration: none;
+}
+nav div
+{
+    margin-right: auto;
+    margin-left: 20px;
+    padding-left: 20px;
+    /* border: 2px solid seagreen; */
+}
+.main-container
+{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.first-bar
+{
+    width: 100%;
+    position: relative;
+}
+.first-bar img
+{
+    width: 100%;
+    margin: 0 auto;
+   
+}
+.headers
+{
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(56, 170, 28);
+    text-shadow: 3px 3px rgb(11, 107, 151);
+    word-spacing: 0.4em;
+}
+.second-bar
+{
+    padding-top: 30px;
+    text-align: center;
+    background-color: rgba(62, 131, 83, 0.8);
+    color: white;
+}
+.second-bar button
+{
+    margin: 100px 30px;
+    
+    background: #28ad50;
+    letter-spacing: 0.11rem;
+    word-spacing: 0.3 rem;
+    font-size: 1.3rem;
+    width: 180px;
+    padding: 8px 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.second-bar button:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow:10px 10px 10px 2px rgb(0, 0, 0);  
+}
