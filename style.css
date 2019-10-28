@@ -1,9 +1,9 @@
 body
 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    font-size: 16px;
     /* height: 120vh; */
-    width: 90vw;
+    width: 70vw;
     background-image: url("img/b3.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -15,11 +15,11 @@ nav
 {
     display: flex;
     /* border: 2px solid red; */
-    width:90vw ;
+    width:100% ;
     justify-content: flex-end;
     background-color: rgba(2, 167, 84, 0.9) ;
     color:white;
-    padding-right: 40px;
+    padding-right: 3%;
     box-sizing: border-box;
     position: -webkit-sticky;
     position: sticky;
@@ -30,8 +30,8 @@ nav
 
 nav a
 {
-margin: 10px;
-font-size: 1.5rem;
+margin: 2%;
+font-size: 1.5em;
 color:white;
 }
 nav a:link {
@@ -65,13 +65,13 @@ nav div
 {
     position: absolute;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: rgb(56, 170, 28);
-    text-shadow: 3px 3px rgb(11, 107, 151);
+    text-shadow: 0.15em 0.15em rgb(1, 11, 15);
     word-spacing: 0.4em;
 }
 .second-bar
@@ -80,16 +80,24 @@ nav div
     text-align: center;
     background-color: rgba(62, 131, 83, 0.8);
     color: white;
+    margin-top: 30px;
+}
+.second-bar p
+{
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+    text-align-last: center;
 }
 .second-bar button
 {
-    margin: 100px 30px;
-    
+    margin: 10% 5%;
     background: #28ad50;
-    letter-spacing: 0.11rem;
-    word-spacing: 0.3 rem;
-    font-size: 1.3rem;
-    width: 180px;
+    letter-spacing: 0.11em;
+    word-spacing: 0.1em;
+    font-size: 1.2em;
+    width: 20%;
+    max-width: 180px;
     padding: 8px 5px;
     border-radius: 5px;
     text-align: center;
@@ -101,4 +109,122 @@ nav div
     transform: scale(1.05);
     cursor: pointer;
     box-shadow:10px 10px 10px 2px rgb(0, 0, 0);  
+}
+.about
+{
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr;
+    grid-template-rows: auto auto;
+    background-color: rgba(62, 131, 83, 0.8);
+    margin-top: 20px;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+}
+.about header
+{
+    grid-column: span 3;
+    padding-left: 30px;
+    background-color: transparent;
+    justify-self: left;
+}
+.child
+{
+width: 100%;
+padding: 4%;
+box-sizing: border-box;
+margin: auto;
+}
+.pic img
+{
+    display: block;
+    border-radius: 50%;
+    width: 70%;
+    margin:0 auto;
+    padding: 5%;
+    
+      
+}
+.details
+{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: repeat(4, max-content);
+    justify-items: left;
+    grid-gap: 5px 20px;
+    letter-spacing: 0.15em;
+
+}
+.description
+{
+    text-align: justify;
+
+}
+
+.left
+{
+    color: rgb(228, 99, 99);
+    font-weight: bold;
+}
+.right
+{
+    color: rgb(255, 230, 0);
+}
+
+
+footer
+{
+    width: inherit;
+    min-height: 30px;
+    background-color: gray;
+    color: wheat;
+    text-align: center;
+    margin: auto auto;
+}
+
+@media only screen and (max-width:1360px)
+{
+    .description
+    {
+        grid-column: span 3;
+    }
+    .details
+    {
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (max-width:1000px)
+{
+    nav a
+    {
+    font-size: 1em;
+    }
+
+    .headers
+    {
+    font-size: 1em;
+    }
+   
+}
+@media only screen and (min-width:425px) and (max-width:768px)
+{
+    body 
+    {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width:370px) and (max-width:425px)
+{
+    body 
+    {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:370px)
+{
+    body 
+    {
+        font-size: 8px;
+    }
 }
