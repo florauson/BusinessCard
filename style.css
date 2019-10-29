@@ -1,5 +1,4 @@
-body
-{
+body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     /* height: 120vh; */
@@ -8,18 +7,16 @@ body
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    margin:auto auto;
+    margin: auto auto;
 }
 
-nav 
-{
+nav {
     display: flex;
     /* border: 2px solid red; */
-    width:100% ;
+    width: 100%;
     justify-content: flex-end;
-    background-color: rgba(2, 167, 84, 0.9) ;
-    color:white;
-    padding-right: 3%;
+    background-color: rgba(2, 167, 84, 0.9);
+    color: white;
     box-sizing: border-box;
     position: -webkit-sticky;
     position: sticky;
@@ -28,41 +25,49 @@ nav
 
 }
 
-nav a
-{
-margin: 2%;
-font-size: 1.5em;
-color:white;
+nav a {
+    /* margin: 2%; */
+    font-size: 1.5em;
+    color: white;
+    width: max-content;
+    padding: 1%;
+    /* border-right: 3px solid rgba(0, 0, 0, 0.8); */
+    border-left: 2px solid rgba(25, 148, 66, 0.8);
 }
+
 nav a:link {
     text-decoration: none;
 }
-nav div
-{
+
+nav a:hover {
+    background-color: rgba(12, 131, 75, 0.9);
+}
+
+nav div {
     margin-right: auto;
     margin-left: 20px;
     padding-left: 20px;
     /* border: 2px solid seagreen; */
 }
-.main-container
-{
+
+.main-container {
     width: 100%;
     margin-top: 20px;
-    
+
 }
-.first-bar
-{
+
+.first-bar {
     width: 100%;
     position: relative;
 }
-.first-bar img
-{
+
+.first-bar img {
     width: 100%;
     margin: 0 auto;
-   
+
 }
-.headers
-{
+
+.headers {
     position: absolute;
     font-weight: bold;
     font-size: 1.5em;
@@ -74,23 +79,23 @@ nav div
     text-shadow: 0.15em 0.15em rgb(1, 11, 15);
     word-spacing: 0.4em;
 }
-.second-bar
-{
+
+.second-bar {
     padding-top: 30px;
     text-align: center;
     background-color: rgba(62, 131, 83, 0.8);
     color: white;
     margin-top: 30px;
 }
-.second-bar p
-{
+
+.second-bar p {
     width: 70%;
     text-align: justify;
     margin: 0 auto;
     text-align-last: center;
 }
-.second-bar button
-{
+
+.second-bar button {
     margin: 10% 5%;
     background: #28ad50;
     letter-spacing: 0.11em;
@@ -104,14 +109,14 @@ nav div
     text-transform: uppercase;
     color: #FFF;
 }
-.second-bar button:hover
-{
+
+.second-bar button:hover {
     transform: scale(1.05);
     cursor: pointer;
-    box-shadow:10px 10px 10px 2px rgb(0, 0, 0);  
+    box-shadow: 10px 10px 10px 2px rgb(0, 0, 0);
 }
-.about
-{
+
+.about {
     display: grid;
     grid-template-columns: 2fr 2fr 4fr;
     grid-template-rows: auto auto;
@@ -121,32 +126,31 @@ nav div
     justify-items: center;
     color: white;
 }
-.about header
-{
+
+.about header {
     grid-column: span 3;
-    padding-left: 30px;
-    background-color: transparent;
+    padding-left: 3%;
     justify-self: left;
 }
-.child
-{
-width: 100%;
-padding: 4%;
-box-sizing: border-box;
-margin: auto;
+
+.about-divs {
+    width: 100%;
+    padding: 4%;
+    box-sizing: border-box;
+    margin: auto;
 }
-.pic img
-{
+
+.pic img {
     display: block;
     border-radius: 50%;
     width: 70%;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 5%;
-    
-      
+
+
 }
-.details
-{
+
+.details {
     display: grid;
     grid-template-columns: max-content max-content;
     grid-template-rows: repeat(4, max-content);
@@ -155,76 +159,100 @@ margin: auto;
     letter-spacing: 0.15em;
 
 }
-.description
-{
+
+.details .left {
+    color: rgb(228, 99, 99);
+    font-weight: bold;
+}
+
+.details .right {
+    color: rgb(255, 230, 0);
+}
+
+.description {
     text-align: justify;
 
 }
 
-.left
-{
-    color: rgb(228, 99, 99);
-    font-weight: bold;
-}
-.right
-{
-    color: rgb(255, 230, 0);
+.portfolio {
+    background-color: rgba(62, 131, 83, 0.8);
+    color: white;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
+.portfolio header {
+    grid-column: span 2;
+    padding-left: 3%;
+    justify-self: left;
+}
 
-footer
-{
+.portfolio img {
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.portfolio .photo {
+    overflow: hidden;
+}
+
+.portfolio .photo:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+footer {
     width: inherit;
-    min-height: 30px;
     background-color: gray;
     color: wheat;
     text-align: center;
-    margin: auto auto;
+    margin-top: 20px;
 }
 
-@media only screen and (max-width:1360px)
-{
-    .description
-    {
+@media only screen and (max-width:1360px) {
+    .description {
         grid-column: span 3;
     }
-    .details
-    {
+
+    .details {
         grid-column: span 2;
     }
 }
 
-@media only screen and (max-width:1000px)
-{
-    nav a
-    {
-    font-size: 1em;
+@media only screen and (max-width:1000px) {
+    nav a {
+        font-size: 1em;
     }
 
-    .headers
-    {
-    font-size: 1em;
+    .headers {
+        font-size: 1em;
     }
-   
+
 }
-@media only screen and (min-width:425px) and (max-width:768px)
-{
-    body 
-    {
+
+@media only screen and (min-width:425px) and (max-width:768px) {
+    body {
         font-size: 12px;
     }
 }
-@media only screen and (min-width:370px) and (max-width:425px)
-{
-    body 
-    {
+
+@media only screen and (min-width:370px) and (max-width:425px) {
+    body {
         font-size: 10px;
     }
 }
-@media only screen and (max-width:370px)
-{
-    body 
-    {
+
+@media only screen and (max-width:370px) {
+    body {
         font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .portfolio {
+        grid-template-columns: 1fr;
     }
 }
