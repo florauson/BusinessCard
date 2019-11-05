@@ -1,6 +1,6 @@
 # Business Card
 
-You can see it here: [CLICK](https://florauson.github.io/Wizytowka/)
+You can see it here: [CLICK](https://florauson.github.io/BusinessCard/)
 
 It-s my first project on coderscamp. Its consists of three sections:
 - About me
