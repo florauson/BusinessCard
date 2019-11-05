@@ -1,4 +1,4 @@
-# Wizytowka
+# Business Card
 
 You can see it here: [CLICK](https://florauson.github.io/Wizytowka/)
 
