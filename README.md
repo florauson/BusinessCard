@@ -1,5 +1,7 @@
 # Business Card
 
+![Mobile screenshot](img/mockup.JPG)
+
 You can see it here: [CLICK](https://florauson.github.io/BusinessCard/)
 
 It-s my first project on coderscamp. Its consists of three sections:
